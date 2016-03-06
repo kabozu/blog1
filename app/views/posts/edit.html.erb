@@ -1,0 +1,9 @@
+<%= form_for(@post) do |form| %>
+  <p><%= form.label("Tytuł") %></p>
+  <p><%= form.text_field("title") %></p>
+  <p><%= form.label("Treść") %></p>
+  <p><%= form.text_area("content") %></p>
+  <p><%= form.label("Data") %></p>
+  <p><%= form.text_field("date") %></p>
+  <p><%= form.submit %></p>
+<% end %>

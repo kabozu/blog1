@@ -1,0 +1,10 @@
+<h1>Welcome Kasia</h1>
+<p>drugi dzień</p>
+
+<% @posts.each do |post| %>
+
+  <h2><%= post[:title] %></h2>
+  <span><%= post[:date] %></span>
+  <p><%= post[:content] %></p>
+
+<% end %>
